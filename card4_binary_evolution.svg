@@ -1,0 +1,245 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1100" width="800" height="1100">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700;900&amp;display=swap');
+      text { font-family: 'Noto Sans SC', sans-serif; }
+    </style>
+    <filter id="shadow1">
+      <feDropShadow dx="3" dy="3" stdDeviation="2" flood-color="#00000030"/>
+    </filter>
+    <linearGradient id="bgGrad4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ECFDF5"/>
+      <stop offset="100%" stop-color="#D1FAE5"/>
+    </linearGradient>
+    <linearGradient id="titleGrad4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#10B981"/>
+    </linearGradient>
+    <linearGradient id="addGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#EF4444"/>
+      <stop offset="100%" stop-color="#DC2626"/>
+    </linearGradient>
+    <linearGradient id="subGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+    <linearGradient id="mulGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+    <linearGradient id="divGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+    <pattern id="leafs" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="0.8" fill="#05966908"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="1100" rx="20" fill="url(#bgGrad4)"/>
+  <rect width="800" height="1100" rx="20" fill="url(#leafs)"/>
+  
+  <!-- Border -->
+  <rect x="8" y="8" width="784" height="1084" rx="16" fill="none" stroke="#059669" stroke-width="3" stroke-dasharray="8,4"/>
+
+  <!-- Title Banner -->
+  <rect x="50" y="30" width="700" height="80" rx="40" fill="url(#titleGrad4)" filter="url(#shadow1)"/>
+  <text x="400" y="82" text-anchor="middle" font-size="34" font-weight="900" fill="white">🔢 进制运算 &amp; 💻 计算机进化</text>
+
+  <!-- Card number -->
+  <circle cx="730" cy="140" r="25" fill="#059669" opacity="0.9"/>
+  <text x="730" y="148" text-anchor="middle" font-size="18" font-weight="700" fill="white">4/4</text>
+
+  <!-- Binary conversion table -->
+  <rect x="40" y="130" width="340" height="240" rx="14" fill="white" stroke="#A7F3D0" stroke-width="2" filter="url(#shadow1)"/>
+  <text x="60" y="160" font-size="18" font-weight="900" fill="#059669">📋 十进制 ↔ 二进制对照</text>
+  <text x="60" y="180" font-size="12" fill="#777">十进制逢10进1，二进制逢2进1</text>
+  
+  <!-- Table -->
+  <g transform="translate(60,190)">
+    <rect width="80" height="25" fill="#059669" rx="4"/>
+    <text x="40" y="18" text-anchor="middle" font-size="12" font-weight="700" fill="white">十进制</text>
+    <rect x="85" width="80" height="25" fill="#059669" rx="4"/>
+    <text x="125" y="18" text-anchor="middle" font-size="12" font-weight="700" fill="white">二进制</text>
+    <rect x="175" width="80" height="25" fill="#059669" rx="4"/>
+    <text x="215" y="18" text-anchor="middle" font-size="12" font-weight="700" fill="white">十进制</text>
+    <rect x="260" width="80" height="25" fill="#059669" rx="4"/>
+    <text x="300" y="18" text-anchor="middle" font-size="12" font-weight="700" fill="white">二进制</text>
+  </g>
+  <g transform="translate(60,220)" font-size="13">
+    <text x="40" y="15" text-anchor="middle" fill="#333">0</text><text x="125" y="15" text-anchor="middle" font-weight="700" fill="#059669">0000</text>
+    <text x="215" y="15" text-anchor="middle" fill="#333">5</text><text x="300" y="15" text-anchor="middle" font-weight="700" fill="#059669">0101</text>
+    <text x="40" y="35" text-anchor="middle" fill="#333">1</text><text x="125" y="35" text-anchor="middle" font-weight="700" fill="#059669">0001</text>
+    <text x="215" y="35" text-anchor="middle" fill="#333">6</text><text x="300" y="35" text-anchor="middle" font-weight="700" fill="#059669">0110</text>
+    <text x="40" y="55" text-anchor="middle" fill="#333">2</text><text x="125" y="55" text-anchor="middle" font-weight="700" fill="#059669">0010</text>
+    <text x="215" y="55" text-anchor="middle" fill="#333">7</text><text x="300" y="55" text-anchor="middle" font-weight="700" fill="#059669">0111</text>
+    <text x="40" y="75" text-anchor="middle" fill="#333">3</text><text x="125" y="75" text-anchor="middle" font-weight="700" fill="#059669">0011</text>
+    <text x="215" y="75" text-anchor="middle" fill="#333">8</text><text x="300" y="75" text-anchor="middle" font-weight="700" fill="#059669">1000</text>
+    <text x="40" y="95" text-anchor="middle" fill="#333">4</text><text x="125" y="95" text-anchor="middle" font-weight="700" fill="#059669">0100</text>
+    <text x="215" y="95" text-anchor="middle" fill="#333">9</text><text x="300" y="95" text-anchor="middle" font-weight="700" fill="#059669">1001</text>
+    <!-- Separator lines -->
+    <line x1="0" y1="22" x2="295" y2="22" stroke="#E5E7EB" stroke-width="1"/>
+    <line x1="0" y1="42" x2="295" y2="42" stroke="#E5E7EB" stroke-width="1"/>
+    <line x1="0" y1="62" x2="295" y2="62" stroke="#E5E7EB" stroke-width="1"/>
+    <line x1="0" y1="82" x2="295" y2="82" stroke="#E5E7EB" stroke-width="1"/>
+  </g>
+
+  <!-- Z3 Computer -->
+  <rect x="400" y="130" width="360" height="240" rx="14" fill="white" stroke="#A7F3D0" stroke-width="2" filter="url(#shadow1)"/>
+  <text x="420" y="160" font-size="18" font-weight="900" fill="#059669">🏛️ 第一台纸带计算机 Z3</text>
+  
+  <g transform="translate(420,170)">
+    <!-- Z3 illustration -->
+    <rect x="0" y="0" width="100" height="70" rx="8" fill="#F3F4F6" stroke="#D1D5DB" stroke-width="2"/>
+    <rect x="10" y="8" width="80" height="20" rx="3" fill="#4B5563"/>
+    <rect x="10" y="33" width="80" height="20" rx="3" fill="#6B7280"/>
+    <text x="50" y="80" text-anchor="middle" font-size="10" fill="#777">Z3计算机</text>
+    
+    <text x="120" y="18" font-size="12" fill="#555">📅 1941年·德国柏林</text>
+    <text x="120" y="38" font-size="12" fill="#555">👤 康拉德·楚泽发明</text>
+    <text x="120" y="58" font-size="12" fill="#555">🔧 使用继电器（机械开关）</text>
+    <text x="120" y="78" font-size="12" fill="#555">📎 穿孔纸带输入程序</text>
+  </g>
+  
+  <!-- Punched tape explanation -->
+  <rect x="420" y="260" width="320" height="90" rx="8" fill="#FEF3C7" stroke="#FBBF24" stroke-width="1.5"/>
+  <text x="435" y="282" font-size="13" font-weight="700" fill="#92400E">🎞️ 穿孔纸带是什么？</text>
+  <text x="435" y="302" font-size="12" fill="#78350F">一种长条纸，按固定格式打孔</text>
+  <text x="435" y="322" font-size="12" fill="#78350F">有孔=1，无孔=0 → 每个孔代表1比特</text>
+  <!-- Mini punched tape visual -->
+  <g transform="translate(660,275)">
+    <rect width="60" height="40" rx="4" fill="#FEF9C3" stroke="#D97706" stroke-width="1"/>
+    <circle cx="10" cy="12" r="4" fill="#D97706"/>
+    <circle cx="25" cy="12" r="4" fill="none" stroke="#D9770644" stroke-width="1"/>
+    <circle cx="40" cy="12" r="4" fill="#D97706"/>
+    <circle cx="10" cy="28" r="4" fill="none" stroke="#D9770644" stroke-width="1"/>
+    <circle cx="25" cy="28" r="4" fill="#D97706"/>
+    <circle cx="40" cy="28" r="4" fill="#D97706"/>
+    <text x="55" y="12" font-size="8" fill="#D97706">1</text>
+    <text x="55" y="28" font-size="8" fill="#D97706">0</text>
+  </g>
+
+  <!-- Four Operations -->
+  <text x="55" y="400" font-size="20" font-weight="900" fill="#333">⚔️ 运算天团：二进制加减乘除</text>
+
+  <!-- Addition -->
+  <g transform="translate(40,415)">
+    <rect width="175" height="185" rx="14" fill="white" stroke="#FCA5A5" stroke-width="2" filter="url(#shadow1)"/>
+    <rect x="0" y="0" width="175" height="35" rx="14" fill="url(#addGrad)"/>
+    <rect x="0" y="17" width="175" height="18" fill="url(#addGrad)"/>
+    <text x="15" y="25" font-size="16" font-weight="900" fill="white">⚔️ 勇士：加法</text>
+    <text x="87" y="65" text-anchor="middle" font-size="14" font-weight="700" fill="#333">  0 1 1 0</text>
+    <text x="87" y="83" text-anchor="middle" font-size="14" font-weight="700" fill="#333">+ 0 1 0 0</text>
+    <line x1="30" y1="90" x2="150" y2="90" stroke="#333" stroke-width="2"/>
+    <text x="87" y="108" text-anchor="middle" font-size="14" font-weight="900" fill="#EF4444">  1 0 1 0</text>
+    <text x="15" y="133" font-size="11" fill="#555">规则：逢2进1</text>
+    <text x="15" y="150" font-size="11" fill="#555">1+1=10（进位）</text>
+    <text x="15" y="167" font-size="11" fill="#555">1+0=1，0+0=0</text>
+  </g>
+
+  <!-- Subtraction -->
+  <g transform="translate(230,415)">
+    <rect width="175" height="185" rx="14" fill="white" stroke="#93C5FD" stroke-width="2" filter="url(#shadow1)"/>
+    <rect x="0" y="0" width="175" height="35" rx="14" fill="url(#subGrad)"/>
+    <rect x="0" y="17" width="175" height="18" fill="url(#subGrad)"/>
+    <text x="15" y="25" font-size="16" font-weight="900" fill="white">🥷 忍者：减法</text>
+    <text x="87" y="65" text-anchor="middle" font-size="12" font-weight="700" fill="#333">减法其实是加法伪装！</text>
+    <text x="87" y="88" text-anchor="middle" font-size="12" fill="#555">7 - 5 = 7 + (-5)</text>
+    <text x="87" y="112" text-anchor="middle" font-size="12" fill="#555">用"补码"把负数</text>
+    <text x="87" y="132" text-anchor="middle" font-size="12" fill="#555">变成可以加的形式</text>
+    <rect x="15" y="142" width="145" height="30" rx="6" fill="#EFF6FF"/>
+    <text x="87" y="163" text-anchor="middle" font-size="11" font-weight="700" fill="#2563EB">银行扣钱=加一个负数</text>
+  </g>
+
+  <!-- Multiplication -->
+  <g transform="translate(420,415)">
+    <rect width="175" height="185" rx="14" fill="white" stroke="#C4B5FD" stroke-width="2" filter="url(#shadow1)"/>
+    <rect x="0" y="0" width="175" height="35" rx="14" fill="url(#mulGrad)"/>
+    <rect x="0" y="17" width="175" height="18" fill="url(#mulGrad)"/>
+    <text x="15" y="25" font-size="16" font-weight="900" fill="white">🧙 法师：乘法</text>
+    <text x="87" y="60" text-anchor="middle" font-size="12" font-weight="700" fill="#333">本质：重复做加法</text>
+    <text x="87" y="83" text-anchor="middle" font-size="12" fill="#555">3×4 = 3+3+3+3</text>
+    <text x="87" y="108" text-anchor="middle" font-size="12" fill="#555">技巧：左移一位=×2</text>
+    <rect x="15" y="118" width="145" height="55" rx="6" fill="#F5F3FF"/>
+    <text x="87" y="138" text-anchor="middle" font-size="11" fill="#7C3AED">0101 × 0010</text>
+    <text x="87" y="155" text-anchor="middle" font-size="11" fill="#7C3AED">= 0101左移1位</text>
+    <text x="87" y="168" text-anchor="middle" font-size="11" font-weight="700" fill="#7C3AED">= 1010 ✓</text>
+  </g>
+
+  <!-- Division -->
+  <g transform="translate(610,415)">
+    <rect width="150" height="185" rx="14" fill="white" stroke="#FCD34D" stroke-width="2" filter="url(#shadow1)"/>
+    <rect x="0" y="0" width="150" height="35" rx="14" fill="url(#divGrad)"/>
+    <rect x="0" y="17" width="150" height="18" fill="url(#divGrad)"/>
+    <text x="15" y="25" font-size="16" font-weight="900" fill="white">⚖️ 裁判：除法</text>
+    <text x="75" y="60" text-anchor="middle" font-size="12" font-weight="700" fill="#333">本质：不断减</text>
+    <text x="75" y="83" text-anchor="middle" font-size="11" fill="#555">10÷3 =</text>
+    <text x="75" y="100" text-anchor="middle" font-size="11" fill="#555">10-3=7（1次）</text>
+    <text x="75" y="115" text-anchor="middle" font-size="11" fill="#555">7-3=4（2次）</text>
+    <text x="75" y="130" text-anchor="middle" font-size="11" fill="#555">4-3=1（3次）</text>
+    <text x="75" y="145" text-anchor="middle" font-size="11" fill="#555">1&lt;3 停！</text>
+    <text x="75" y="170" text-anchor="middle" font-size="11" font-weight="700" fill="#D97706">商3 余1 ✓</text>
+  </g>
+
+  <!-- Computer Evolution Timeline -->
+  <text x="55" y="635" font-size="20" font-weight="900" fill="#333">🧬 数字DNA：计算机进化史</text>
+  
+  <rect x="40" y="650" width="720" height="400" rx="14" fill="white" stroke="#A7F3D0" stroke-width="2" filter="url(#shadow1)"/>
+
+  <!-- Timeline line -->
+  <line x1="120" y1="690" x2="120" y2="1020" stroke="#059669" stroke-width="3" stroke-dasharray="6,3"/>
+
+  <!-- Era 1: Mechanical -->
+  <g transform="translate(140,670)">
+    <circle cx="-20" cy="20" r="12" fill="#F59E0B" stroke="white" stroke-width="3"/>
+    <text x="-20" y="25" text-anchor="middle" font-size="10" font-weight="900" fill="white">1</text>
+    <rect x="0" y="0" width="590" height="75" rx="10" fill="#FEF3C7" stroke="#FBBF24" stroke-width="1.5"/>
+    <text x="15" y="22" font-size="15" font-weight="900" fill="#92400E">⚙️ 机械式器件</text>
+    <text x="200" y="22" font-size="12" fill="#B45309">19世纪80年代~20世纪30年代</text>
+    <text x="15" y="42" font-size="12" fill="#78350F">比特载体：穿孔卡片、杠杆、齿轮、滑块</text>
+    <text x="15" y="60" font-size="12" fill="#78350F">代表：巴贝奇分析机、霍利里斯穿孔卡片机（1890美国人口普查）</text>
+    <text x="480" y="62" font-size="11" fill="#D97706">🐌 非常慢，体积大</text>
+  </g>
+
+  <!-- Era 2: Relay -->
+  <g transform="translate(140,760)">
+    <circle cx="-20" cy="20" r="12" fill="#3B82F6" stroke="white" stroke-width="3"/>
+    <text x="-20" y="25" text-anchor="middle" font-size="10" font-weight="900" fill="white">2</text>
+    <rect x="0" y="0" width="590" height="75" rx="10" fill="#DBEAFE" stroke="#60A5FA" stroke-width="1.5"/>
+    <text x="15" y="22" font-size="15" font-weight="900" fill="#1E40AF">🔌 继电器</text>
+    <text x="140" y="22" font-size="12" fill="#2563EB">20世纪30年代~40年代</text>
+    <text x="15" y="42" font-size="12" fill="#1E3A5F">比特载体：继电器（电磁机械开关） → 通电=1，断电=0</text>
+    <text x="15" y="60" font-size="12" fill="#1E3A5F">代表：康拉德·楚泽的 Z3 计算机（1941，第一台可编程计算机）</text>
+    <text x="480" y="62" font-size="11" fill="#3B82F6">⚡ 比机械快，有噪音</text>
+  </g>
+
+  <!-- Era 3: Vacuum tube (implied) -->
+  <g transform="translate(140,850)">
+    <circle cx="-20" cy="20" r="12" fill="#8B5CF6" stroke="white" stroke-width="3"/>
+    <text x="-20" y="25" text-anchor="middle" font-size="10" font-weight="900" fill="white">3</text>
+    <rect x="0" y="0" width="590" height="55" rx="10" fill="#EDE9FE" stroke="#A78BFA" stroke-width="1.5"/>
+    <text x="15" y="22" font-size="15" font-weight="900" fill="#5B21B6">💡 电子管</text>
+    <text x="140" y="22" font-size="12" fill="#6D28D9">20世纪40年代~50年代</text>
+    <text x="15" y="42" font-size="12" fill="#4C1D95">比继电器更快，但体积大、发热多、易坏</text>
+    <text x="420" y="42" font-size="11" fill="#7C3AED">🔥 又热又大</text>
+  </g>
+
+  <!-- Era 4: Transistor -->
+  <g transform="translate(140,920)">
+    <circle cx="-20" cy="20" r="12" fill="#EC4899" stroke="white" stroke-width="3"/>
+    <text x="-20" y="25" text-anchor="middle" font-size="10" font-weight="900" fill="white">4</text>
+    <rect x="0" y="0" width="590" height="55" rx="10" fill="#FCE7F3" stroke="#F472B6" stroke-width="1.5"/>
+    <text x="15" y="22" font-size="15" font-weight="900" fill="#9D174D">🔬 晶体管 → 集成电路</text>
+    <text x="260" y="22" font-size="12" fill="#BE185D">20世纪50年代至今</text>
+    <text x="15" y="42" font-size="12" fill="#831843">纳米级芯片，亿万个晶体管，速度极快，体积极小！</text>
+    <text x="430" y="42" font-size="11" fill="#EC4899">🚀 现代计算机</text>
+  </g>
+
+  <!-- Key evolution insight -->
+  <rect x="140" y="990" width="590" height="40" rx="20" fill="#059669" opacity="0.1"/>
+  <text x="435" y="1015" text-anchor="middle" font-size="14" font-weight="700" fill="#059669">🔑 进化核心：比特的载体在变，但0和1的本质从未改变！</text>
+
+  <!-- Footer -->
+  <text x="400" y="1080" text-anchor="middle" font-size="12" fill="#AAA">📚 计算机基本组成 · 漫画知识笔记</text>
+</svg>

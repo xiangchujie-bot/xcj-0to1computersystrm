@@ -1,0 +1,238 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1100" width="800" height="1100">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700;900&amp;display=swap');
+      text { font-family: 'Noto Sans SC', sans-serif; }
+    </style>
+    <filter id="shadow1">
+      <feDropShadow dx="3" dy="3" stdDeviation="2" flood-color="#00000030"/>
+    </filter>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFF8E7"/>
+      <stop offset="100%" stop-color="#FFE8CC"/>
+    </linearGradient>
+    <linearGradient id="titleGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FF6B35"/>
+      <stop offset="100%" stop-color="#F7931E"/>
+    </linearGradient>
+    <linearGradient id="cpuGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4ECDC4"/>
+      <stop offset="100%" stop-color="#2CB5A0"/>
+    </linearGradient>
+    <linearGradient id="ramGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FF6B6B"/>
+      <stop offset="100%" stop-color="#EE5A5A"/>
+    </linearGradient>
+    <linearGradient id="storageGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#A78BFA"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <linearGradient id="ioGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FBBF24"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+    <linearGradient id="progGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#60A5FA"/>
+      <stop offset="100%" stop-color="#3B82F6"/>
+    </linearGradient>
+    <pattern id="dots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#00000008"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="1100" rx="20" fill="url(#bgGrad)"/>
+  <rect width="800" height="1100" rx="20" fill="url(#dots)"/>
+  
+  <!-- Border -->
+  <rect x="8" y="8" width="784" height="1084" rx="16" fill="none" stroke="#FF6B35" stroke-width="3" stroke-dasharray="8,4"/>
+
+  <!-- Title Banner -->
+  <rect x="50" y="30" width="700" height="80" rx="40" fill="url(#titleGrad)" filter="url(#shadow1)"/>
+  <text x="400" y="82" text-anchor="middle" font-size="36" font-weight="900" fill="white">🖥️ 第1章·魔方体：计算机</text>
+
+  <!-- Card number -->
+  <circle cx="730" cy="140" r="25" fill="#FF6B35" opacity="0.9"/>
+  <text x="730" y="148" text-anchor="middle" font-size="18" font-weight="700" fill="white">1/4</text>
+
+  <!-- Section 1: What is Computer -->
+  <rect x="40" y="130" width="720" height="160" rx="16" fill="white" stroke="#FFD4A8" stroke-width="2" filter="url(#shadow1)"/>
+  
+  <!-- Cute robot character -->
+  <g transform="translate(80,155)">
+    <!-- Robot body -->
+    <rect x="0" y="20" width="50" height="45" rx="8" fill="#4ECDC4"/>
+    <rect x="5" y="25" width="16" height="12" rx="3" fill="white"/>
+    <rect x="29" y="25" width="16" height="12" rx="3" fill="white"/>
+    <circle cx="13" cy="31" r="4" fill="#333"/>
+    <circle cx="37" cy="31" r="4" fill="#333"/>
+    <rect x="15" y="45" width="20" height="5" rx="2" fill="#FF6B6B"/>
+    <!-- Antenna -->
+    <line x1="25" y1="20" x2="25" y2="8" stroke="#4ECDC4" stroke-width="3"/>
+    <circle cx="25" cy="5" r="5" fill="#FFD700"/>
+    <!-- Arms -->
+    <rect x="-12" y="30" width="12" height="6" rx="3" fill="#4ECDC4"/>
+    <rect x="50" y="30" width="12" height="6" rx="3" fill="#4ECDC4"/>
+  </g>
+  
+  <!-- Speech bubble -->
+  <path d="M150,160 L710,160 Q720,160 720,170 L720,270 Q720,280 710,280 L170,280 L145,270 L150,250 L150,170 Q150,160 160,160 Z" fill="#FFF9F0" stroke="#FFB347" stroke-width="2"/>
+  
+  <text x="170" y="190" font-size="20" font-weight="900" fill="#FF6B35">💡 什么是计算机？</text>
+  <text x="170" y="218" font-size="15" fill="#555">计算机是一种能够 <tspan font-weight="700" fill="#E74C3C">接收输入信号</tspan>、</text>
+  <text x="170" y="240" font-size="15" fill="#555"><tspan font-weight="700" fill="#3498DB">自动处理信号</tspan>，并 <tspan font-weight="700" fill="#27AE60">产生输出信号</tspan> 的电子设备</text>
+  <text x="170" y="262" font-size="15" fill="#555">核心能力：根据预设 <tspan font-weight="700" fill="#8E44AD">程序</tspan>，高速、准确地执行任务</text>
+
+  <!-- Section 2: Computer Components - Big visual -->
+  <text x="55" y="330" font-size="22" font-weight="900" fill="#333">🧩 计算机六大组件（打开机箱你会看到…）</text>
+  
+  <!-- Components grid -->
+  <!-- CPU -->
+  <g transform="translate(50,350)">
+    <rect width="220" height="120" rx="14" fill="url(#cpuGrad)" filter="url(#shadow1)"/>
+    <text x="15" y="35" font-size="32">🧠</text>
+    <text x="55" y="35" font-size="16" font-weight="900" fill="white">CPU 中央处理器</text>
+    <text x="15" y="60" font-size="13" fill="#E0FFF8">像人的大脑一样</text>
+    <text x="15" y="78" font-size="13" fill="#E0FFF8">负责 <tspan font-weight="700">思考和计算</tspan></text>
+    <text x="15" y="100" font-size="11" fill="#B0EDE5">central processing unit</text>
+  </g>
+
+  <!-- RAM -->
+  <g transform="translate(290,350)">
+    <rect width="220" height="120" rx="14" fill="url(#ramGrad)" filter="url(#shadow1)"/>
+    <text x="15" y="35" font-size="32">📝</text>
+    <text x="55" y="35" font-size="16" font-weight="900" fill="white">RAM 内存</text>
+    <text x="15" y="60" font-size="13" fill="#FFE0E0">像人的短期记忆</text>
+    <text x="15" y="78" font-size="13" fill="#FFE0E0">临时储存正在用的信息</text>
+    <text x="15" y="100" font-size="11" fill="#FFB8B8">random access memory</text>
+  </g>
+
+  <!-- Storage -->
+  <g transform="translate(530,350)">
+    <rect width="220" height="120" rx="14" fill="url(#storageGrad)" filter="url(#shadow1)"/>
+    <text x="15" y="35" font-size="32">💾</text>
+    <text x="55" y="35" font-size="16" font-weight="900" fill="white">存储设备</text>
+    <text x="15" y="60" font-size="13" fill="#EDE0FF">像人的长期记忆</text>
+    <text x="15" y="78" font-size="13" fill="#EDE0FF">硬盘/闪存，保存数据</text>
+    <text x="15" y="100" font-size="11" fill="#D0B8FF">和程序</text>
+  </g>
+
+  <!-- Input -->
+  <g transform="translate(50,490)">
+    <rect width="220" height="120" rx="14" fill="url(#ioGrad)" filter="url(#shadow1)"/>
+    <text x="15" y="35" font-size="32">⌨️</text>
+    <text x="55" y="35" font-size="16" font-weight="900" fill="white">输入设备</text>
+    <text x="15" y="60" font-size="13" fill="#FFF5D0">键盘、鼠标、麦克风</text>
+    <text x="15" y="78" font-size="13" fill="#FFF5D0">让人和计算机 <tspan font-weight="700">对话</tspan></text>
+    <text x="15" y="100" font-size="11" fill="#FFE49A">👆 你说→计算机听</text>
+  </g>
+
+  <!-- Output -->
+  <g transform="translate(290,490)">
+    <rect width="220" height="120" rx="14" fill="#34D399" filter="url(#shadow1)"/>
+    <text x="15" y="35" font-size="32">🖥️</text>
+    <text x="55" y="35" font-size="16" font-weight="900" fill="white">输出设备</text>
+    <text x="15" y="60" font-size="13" fill="#E0FFF0">显示器、音箱、打印机</text>
+    <text x="15" y="78" font-size="13" fill="#E0FFF0">把计算结果 <tspan font-weight="700">告诉人</tspan></text>
+    <text x="15" y="100" font-size="11" fill="#A0E8C8">👁️ 计算机说→你看</text>
+  </g>
+
+  <!-- Program -->
+  <g transform="translate(530,490)">
+    <rect width="220" height="120" rx="14" fill="url(#progGrad)" filter="url(#shadow1)"/>
+    <text x="15" y="35" font-size="32">📜</text>
+    <text x="55" y="35" font-size="16" font-weight="900" fill="white">程序</text>
+    <text x="15" y="60" font-size="13" fill="#E0EDFF">看不见的灵魂部分</text>
+    <text x="15" y="78" font-size="13" fill="#E0EDFF">人写的 <tspan font-weight="700">指令集合</tspan></text>
+    <text x="15" y="100" font-size="11" fill="#B8D4FF">让计算机知道怎么做事</text>
+  </g>
+
+  <!-- Section 3: How it works -->
+  <rect x="40" y="635" width="720" height="200" rx="16" fill="white" stroke="#FFD4A8" stroke-width="2" filter="url(#shadow1)"/>
+  
+  <text x="65" y="670" font-size="20" font-weight="900" fill="#FF6B35">⚡ 工作原理：计算机就是一堆高速开关！</text>
+  
+  <!-- Switch analogy -->
+  <g transform="translate(60,685)">
+    <!-- Game player hand -->
+    <text x="0" y="30" font-size="40">🎮</text>
+    <text x="50" y="20" font-size="13" fill="#777">游戏高手手速</text>
+    <text x="50" y="38" font-size="15" font-weight="700" fill="#E74C3C">250~300次/分</text>
+  </g>
+  
+  <!-- Arrow -->
+  <text x="240" y="725" font-size="30">➡️</text>
+  <text x="240" y="755" font-size="12" fill="#FF6B35" font-weight="700">科技进步</text>
+  
+  <!-- Chip -->
+  <g transform="translate(310,685)">
+    <text x="0" y="30" font-size="40">🔌</text>
+    <text x="50" y="20" font-size="13" fill="#777">半导体开关频率</text>
+    <text x="50" y="38" font-size="15" font-weight="700" fill="#3498DB">1MHz = 100万次/秒</text>
+  </g>
+
+  <!-- Speed comparison box -->
+  <rect x="60" y="760" width="680" height="55" rx="10" fill="#FFF3E0" stroke="#FFB347" stroke-width="1.5"/>
+  <text x="80" y="783" font-size="14" fill="#555">🐌 人类算 66454545 × 3234324324 → 需要好久…</text>
+  <text x="80" y="803" font-size="14" fill="#555">⚡ 计算机算同样的题 → 只需要 <tspan font-weight="900" fill="#E74C3C" font-size="16">0.000000001秒</tspan>！</text>
+
+  <!-- Section 4: Computer is everywhere -->
+  <rect x="40" y="855" width="720" height="210" rx="16" fill="white" stroke="#FFD4A8" stroke-width="2" filter="url(#shadow1)"/>
+  
+  <text x="65" y="890" font-size="20" font-weight="900" fill="#FF6B35">🌍 计算机无处不在</text>
+  
+  <!-- Device icons row -->
+  <g transform="translate(70,905)">
+    <g>
+      <circle cx="30" cy="30" r="28" fill="#E8F8F5" stroke="#4ECDC4" stroke-width="2"/>
+      <text x="30" y="38" text-anchor="middle" font-size="28">📱</text>
+      <text x="30" y="72" text-anchor="middle" font-size="11" fill="#555">手机</text>
+    </g>
+    <g transform="translate(85,0)">
+      <circle cx="30" cy="30" r="28" fill="#FDE8E8" stroke="#FF6B6B" stroke-width="2"/>
+      <text x="30" y="38" text-anchor="middle" font-size="28">💻</text>
+      <text x="30" y="72" text-anchor="middle" font-size="11" fill="#555">笔记本</text>
+    </g>
+    <g transform="translate(170,0)">
+      <circle cx="30" cy="30" r="28" fill="#EDE8FD" stroke="#A78BFA" stroke-width="2"/>
+      <text x="30" y="38" text-anchor="middle" font-size="28">📺</text>
+      <text x="30" y="72" text-anchor="middle" font-size="11" fill="#555">电视</text>
+    </g>
+    <g transform="translate(255,0)">
+      <circle cx="30" cy="30" r="28" fill="#FEF3C7" stroke="#FBBF24" stroke-width="2"/>
+      <text x="30" y="38" text-anchor="middle" font-size="28">🚗</text>
+      <text x="30" y="72" text-anchor="middle" font-size="11" fill="#555">汽车导航</text>
+    </g>
+    <g transform="translate(340,0)">
+      <circle cx="30" cy="30" r="28" fill="#D1FAE5" stroke="#34D399" stroke-width="2"/>
+      <text x="30" y="38" text-anchor="middle" font-size="28">🧺</text>
+      <text x="30" y="72" text-anchor="middle" font-size="11" fill="#555">洗衣机</text>
+    </g>
+    <g transform="translate(425,0)">
+      <circle cx="30" cy="30" r="28" fill="#DBEAFE" stroke="#60A5FA" stroke-width="2"/>
+      <text x="30" y="38" text-anchor="middle" font-size="28">🎮</text>
+      <text x="30" y="72" text-anchor="middle" font-size="11" fill="#555">游戏机</text>
+    </g>
+    <g transform="translate(510,0)">
+      <circle cx="30" cy="30" r="28" fill="#FCE7F3" stroke="#F472B6" stroke-width="2"/>
+      <text x="30" y="38" text-anchor="middle" font-size="28">⌚</text>
+      <text x="30" y="72" text-anchor="middle" font-size="11" fill="#555">智能手表</text>
+    </g>
+    <g transform="translate(595,0)">
+      <circle cx="30" cy="30" r="28" fill="#F3E8FF" stroke="#C084FC" stroke-width="2"/>
+      <text x="30" y="38" text-anchor="middle" font-size="28">🔢</text>
+      <text x="30" y="72" text-anchor="middle" font-size="11" fill="#555">计算器</text>
+    </g>
+  </g>
+
+  <!-- Key takeaway -->
+  <rect x="70" y="1000" width="660" height="40" rx="20" fill="#FF6B35" opacity="0.1"/>
+  <text x="400" y="1026" text-anchor="middle" font-size="15" font-weight="700" fill="#FF6B35">🔑 核心概念：计算机 = 高级、高速的计算器，利用开关在0和1之间做运算</text>
+
+  <!-- Footer -->
+  <text x="400" y="1080" text-anchor="middle" font-size="12" fill="#AAA">📚 计算机基本组成 · 漫画知识笔记</text>
+</svg>

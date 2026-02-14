@@ -1,0 +1,194 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" width="800" height="1200">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700;900&amp;display=swap');
+      text { font-family: 'Noto Sans SC', sans-serif; }
+    </style>
+    <filter id="shadow1">
+      <feDropShadow dx="3" dy="3" stdDeviation="2" flood-color="#00000030"/>
+    </filter>
+    <linearGradient id="bgGrad5" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FDF4FF"/>
+      <stop offset="50%" stop-color="#FAE8FF"/>
+      <stop offset="100%" stop-color="#F5D0FE"/>
+    </linearGradient>
+    <linearGradient id="titleGrad5" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#A855F7"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+    <pattern id="stars" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="20" cy="20" r="0.7" fill="#A855F706"/>
+      <circle cx="5" cy="5" r="0.5" fill="#A855F704"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="1200" rx="20" fill="url(#bgGrad5)"/>
+  <rect width="800" height="1200" rx="20" fill="url(#stars)"/>
+  <rect x="8" y="8" width="784" height="1184" rx="16" fill="none" stroke="#A855F7" stroke-width="3" stroke-dasharray="8,4"/>
+
+  <!-- Title Banner -->
+  <rect x="50" y="30" width="700" height="80" rx="40" fill="url(#titleGrad5)" filter="url(#shadow1)"/>
+  <text x="400" y="82" text-anchor="middle" font-size="32" font-weight="900" fill="white">🧬 比特进化全史 &amp; 🚪 逻辑门初探</text>
+
+  <!-- Card number -->
+  <circle cx="730" cy="140" r="25" fill="#A855F7" opacity="0.9"/>
+  <text x="730" y="148" text-anchor="middle" font-size="18" font-weight="700" fill="white">5/5</text>
+
+  <!-- Section title -->
+  <text x="55" y="148" font-size="20" font-weight="900" fill="#333">🕰️ 比特载体的七大进化阶段</text>
+
+  <!-- Timeline - vertical -->
+  <line x1="85" y1="170" x2="85" y2="880" stroke="#D8B4FE" stroke-width="4"/>
+
+  <!-- Stage 1: Mechanical -->
+  <g transform="translate(60,165)">
+    <circle cx="25" cy="18" r="18" fill="#F59E0B" stroke="white" stroke-width="3" filter="url(#shadow1)"/>
+    <text x="25" y="23" text-anchor="middle" font-size="12" font-weight="900" fill="white">1</text>
+    <g transform="translate(55,-2)">
+      <rect width="640" height="80" rx="12" fill="white" stroke="#FDE68A" stroke-width="2" filter="url(#shadow1)"/>
+      <text x="15" y="22" font-size="15" font-weight="900" fill="#92400E">⚙️ 机械式器件</text>
+      <text x="220" y="22" font-size="12" fill="#B45309">19世纪80年代 ~ 20世纪30年代</text>
+      <text x="15" y="44" font-size="13" fill="#555">比特载体：穿孔卡片、齿轮、杠杆、滑块</text>
+      <text x="15" y="64" font-size="12" fill="#777">代表：巴贝奇分析机、霍利里斯穿孔卡片机 | 🐌 慢、大、易磨损</text>
+    </g>
+  </g>
+
+  <!-- Stage 2: Relay -->
+  <g transform="translate(60,260)">
+    <circle cx="25" cy="18" r="18" fill="#3B82F6" stroke="white" stroke-width="3" filter="url(#shadow1)"/>
+    <text x="25" y="23" text-anchor="middle" font-size="12" font-weight="900" fill="white">2</text>
+    <g transform="translate(55,-2)">
+      <rect width="640" height="80" rx="12" fill="white" stroke="#BFDBFE" stroke-width="2" filter="url(#shadow1)"/>
+      <text x="15" y="22" font-size="15" font-weight="900" fill="#1E40AF">🔌 继电器（电磁机械）</text>
+      <text x="280" y="22" font-size="12" fill="#2563EB">20世纪30年代 ~ 40年代</text>
+      <text x="15" y="44" font-size="13" fill="#555">原理：电流通→吸合=1，电流断→释放=0（像电动开关）</text>
+      <text x="15" y="64" font-size="12" fill="#777">代表：Z3计算机（1941，康拉德·楚泽） | ⚡ 比机械快，咔哒响</text>
+    </g>
+  </g>
+
+  <!-- Stage 3: Vacuum Tube -->
+  <g transform="translate(60,355)">
+    <circle cx="25" cy="18" r="18" fill="#EF4444" stroke="white" stroke-width="3" filter="url(#shadow1)"/>
+    <text x="25" y="23" text-anchor="middle" font-size="12" font-weight="900" fill="white">3</text>
+    <g transform="translate(55,-2)">
+      <rect width="640" height="80" rx="12" fill="white" stroke="#FECACA" stroke-width="2" filter="url(#shadow1)"/>
+      <text x="15" y="22" font-size="15" font-weight="900" fill="#991B1B">💡 电子管（真空管）</text>
+      <text x="250" y="22" font-size="12" fill="#DC2626">20世纪40年代中期 ~ 50年代</text>
+      <text x="15" y="44" font-size="13" fill="#555">原理：通电发光=1，断电=0（像发光的大灯泡）</text>
+      <text x="15" y="64" font-size="12" fill="#777">代表：ENIAC（第一台通用电子管计算机） | 🔥 快千倍，但超热、易烧坏</text>
+    </g>
+  </g>
+
+  <!-- Stage 4: Transistor -->
+  <g transform="translate(60,450)">
+    <circle cx="25" cy="18" r="18" fill="#10B981" stroke="white" stroke-width="3" filter="url(#shadow1)"/>
+    <text x="25" y="23" text-anchor="middle" font-size="12" font-weight="900" fill="white">4</text>
+    <g transform="translate(55,-2)">
+      <rect width="640" height="80" rx="12" fill="white" stroke="#A7F3D0" stroke-width="2" filter="url(#shadow1)"/>
+      <text x="15" y="22" font-size="15" font-weight="900" fill="#065F46">🔬 晶体管（半导体）</text>
+      <text x="240" y="22" font-size="12" fill="#059669">20世纪50年代末至今</text>
+      <text x="15" y="44" font-size="13" fill="#555">原理：控制电流是否通过晶体管 → 0或1（半导体开关）</text>
+      <text x="15" y="64" font-size="12" fill="#777">代表：IBM 1401 | ✅ 体积小、发热少、速度快、可靠性高！</text>
+    </g>
+  </g>
+
+  <!-- Stage 5: Integrated Circuit -->
+  <g transform="translate(60,545)">
+    <circle cx="25" cy="18" r="18" fill="#8B5CF6" stroke="white" stroke-width="3" filter="url(#shadow1)"/>
+    <text x="25" y="23" text-anchor="middle" font-size="12" font-weight="900" fill="white">5</text>
+    <g transform="translate(55,-2)">
+      <rect width="640" height="80" rx="12" fill="white" stroke="#C4B5FD" stroke-width="2" filter="url(#shadow1)"/>
+      <text x="15" y="22" font-size="15" font-weight="900" fill="#4C1D95">📦 集成电路 (IC)</text>
+      <text x="210" y="22" font-size="12" fill="#6D28D9">20世纪60年代至今</text>
+      <text x="15" y="44" font-size="13" fill="#555">成千上万个晶体管集成在一个芯片上！密度更高，封装更紧凑</text>
+      <text x="15" y="64" font-size="12" fill="#777">代表：Intel 4004（1971，第一颗微处理器，费德里科·法金设计）</text>
+    </g>
+  </g>
+
+  <!-- Stage 6: Nano transistor -->
+  <g transform="translate(60,640)">
+    <circle cx="25" cy="18" r="18" fill="#EC4899" stroke="white" stroke-width="3" filter="url(#shadow1)"/>
+    <text x="25" y="23" text-anchor="middle" font-size="12" font-weight="900" fill="white">6</text>
+    <g transform="translate(55,-2)">
+      <rect width="640" height="80" rx="12" fill="white" stroke="#FBCFE8" stroke-width="2" filter="url(#shadow1)"/>
+      <text x="15" y="22" font-size="15" font-weight="900" fill="#9D174D">⚛️ 纳米晶体管 / FinFET</text>
+      <text x="290" y="22" font-size="12" fill="#BE185D">21世纪初至今</text>
+      <text x="15" y="44" font-size="13" fill="#555">极小的晶体管（已达到 7nm/3nm），需要 EUV 极紫外光刻技术</text>
+      <text x="15" y="64" font-size="12" fill="#777">代表：Intel 7nm/3nm芯片、苹果M系列芯片 | 🚀 超小、超低能耗</text>
+    </g>
+  </g>
+
+  <!-- Stage 7: Quantum -->
+  <g transform="translate(60,735)">
+    <circle cx="25" cy="18" r="18" fill="#06B6D4" stroke="white" stroke-width="3" filter="url(#shadow1)"/>
+    <text x="25" y="23" text-anchor="middle" font-size="12" font-weight="900" fill="white">7</text>
+    <g transform="translate(55,-2)">
+      <rect width="640" height="95" rx="12" fill="white" stroke="#A5F3FC" stroke-width="2" filter="url(#shadow1)"/>
+      <rect x="0" y="0" width="640" height="95" rx="12" fill="#F0FDFA" opacity="0.5"/>
+      <text x="15" y="22" font-size="15" font-weight="900" fill="#155E75">🔮 未来探索中…</text>
+      <text x="180" y="22" font-size="12" fill="#0891B2">仍在实验和研发阶段</text>
+      <text x="15" y="46" font-size="13" fill="#555">量子比特 (qubit)：量子态，0和1<tspan font-weight="700" fill="#06B6D4">可叠加</tspan>！</text>
+      <text x="15" y="66" font-size="13" fill="#555">光学比特：光脉冲的有无、颜色、偏振方向</text>
+      <text x="15" y="86" font-size="13" fill="#555">DNA存储：DNA分子的碱基序列</text>
+    </g>
+  </g>
+
+  <!-- Evolution summary -->
+  <rect x="50" y="855" width="700" height="55" rx="12" fill="#A855F7" opacity="0.1" stroke="#A855F7" stroke-width="1.5"/>
+  <text x="400" y="878" text-anchor="middle" font-size="14" font-weight="700" fill="#7C3AED">🔑 进化核心：比特的物理载体不断变化（更小、更快、更省电）</text>
+  <text x="400" y="898" text-anchor="middle" font-size="14" font-weight="700" fill="#7C3AED">但本质不变：每个比特只能是 0 或 1</text>
+
+  <!-- Part 2: Logic Gate intro -->
+  <rect x="40" y="925" width="720" height="240" rx="16" fill="white" stroke="#E9D5FF" stroke-width="2" filter="url(#shadow1)"/>
+  
+  <text x="65" y="958" font-size="22" font-weight="900" fill="#7C3AED">🚪 逻辑门初探：非门 (NOT Gate)</text>
+  <text x="65" y="982" font-size="14" fill="#555">比特是计算机最小的英雄，<tspan font-weight="700" fill="#7C3AED">逻辑门</tspan> 就是让它们组成大脑的关键！</text>
+
+  <!-- NOT Gate visual -->
+  <g transform="translate(65,1000)">
+    <rect width="300" height="140" rx="12" fill="#FAF5FF" stroke="#D8B4FE" stroke-width="1.5"/>
+    <text x="150" y="25" text-anchor="middle" font-size="14" font-weight="700" fill="#6D28D9">非门电路（用三极管搭建）</text>
+    
+    <!-- NOT gate symbol -->
+    <polygon points="60,55 60,115 120,85" fill="none" stroke="#7C3AED" stroke-width="2.5"/>
+    <circle cx="126" cy="85" r="6" fill="none" stroke="#7C3AED" stroke-width="2.5"/>
+    
+    <!-- Input -->
+    <line x1="25" y1="85" x2="60" y2="85" stroke="#EF4444" stroke-width="3"/>
+    <text x="15" y="78" font-size="11" font-weight="700" fill="#EF4444">输入</text>
+    
+    <!-- Output -->
+    <line x1="132" y1="85" x2="170" y2="85" stroke="#10B981" stroke-width="3"/>
+    <text x="145" y="78" font-size="11" font-weight="700" fill="#10B981">输出</text>
+    
+    <!-- Truth table mini -->
+    <text x="200" y="60" font-size="12" font-weight="700" fill="#6D28D9">真值表：</text>
+    <rect x="200" y="68" width="80" height="20" rx="3" fill="#7C3AED"/>
+    <text x="220" y="82" font-size="11" font-weight="700" fill="white">输入</text>
+    <text x="258" y="82" font-size="11" font-weight="700" fill="white">输出</text>
+    <text x="225" y="102" text-anchor="middle" font-size="13" fill="#555">0</text>
+    <text x="263" y="102" text-anchor="middle" font-size="13" font-weight="700" fill="#10B981">1</text>
+    <text x="225" y="122" text-anchor="middle" font-size="13" fill="#555">1</text>
+    <text x="263" y="122" text-anchor="middle" font-size="13" font-weight="700" fill="#EF4444">0</text>
+    <line x1="200" y1="107" x2="280" y2="107" stroke="#E5E7EB"/>
+  </g>
+
+  <!-- Key explanation -->
+  <g transform="translate(385,1000)">
+    <rect width="350" height="140" rx="12" fill="#FEF3C7" stroke="#FBBF24" stroke-width="1.5"/>
+    <text x="20" y="28" font-size="14" font-weight="700" fill="#92400E">💡 非门做了什么？</text>
+    <text x="20" y="52" font-size="13" fill="#555">输入和输出的信号 <tspan font-weight="900" fill="#EF4444">相反</tspan>！</text>
+    <text x="20" y="76" font-size="13" fill="#555">输入0 → 输出1 （灯亮✨）</text>
+    <text x="20" y="98" font-size="13" fill="#555">输入1 → 输出0 （灯灭🌑）</text>
+    <text x="20" y="125" font-size="12" fill="#777">还有与门(AND)、或门(OR)等</text>
+    <text x="20" y="140" font-size="12" fill="#777">后续章节详细讲解！→</text>
+  </g>
+
+  <!-- Chapter ending -->
+  <rect x="50" y="1150" width="700" height="25" rx="12" fill="#A855F7" opacity="0.08"/>
+  <text x="400" y="1168" text-anchor="middle" font-size="13" fill="#A855F7">🎉 第1章完！从比特到逻辑门，计算机智慧之门即将为你开启！系好安全带 🚀</text>
+
+  <!-- Footer -->
+  <text x="400" y="1190" text-anchor="middle" font-size="12" fill="#AAA">📚 计算机基本组成 · 漫画知识笔记</text>
+</svg>

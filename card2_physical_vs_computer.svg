@@ -1,0 +1,177 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1100" width="800" height="1100">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700;900&amp;display=swap');
+      text { font-family: 'Noto Sans SC', sans-serif; }
+    </style>
+    <filter id="shadow1">
+      <feDropShadow dx="3" dy="3" stdDeviation="2" flood-color="#00000030"/>
+    </filter>
+    <linearGradient id="bgGrad2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#EEF2FF"/>
+      <stop offset="100%" stop-color="#E0E7FF"/>
+    </linearGradient>
+    <linearGradient id="titleGrad2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <linearGradient id="physGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#34D399"/>
+      <stop offset="100%" stop-color="#10B981"/>
+    </linearGradient>
+    <linearGradient id="compGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#818CF8"/>
+      <stop offset="100%" stop-color="#6366F1"/>
+    </linearGradient>
+    <pattern id="grid" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#6366F108" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="1100" rx="20" fill="url(#bgGrad2)"/>
+  <rect width="800" height="1100" rx="20" fill="url(#grid)"/>
+  
+  <!-- Border -->
+  <rect x="8" y="8" width="784" height="1084" rx="16" fill="none" stroke="#6366F1" stroke-width="3" stroke-dasharray="8,4"/>
+
+  <!-- Title Banner -->
+  <rect x="50" y="30" width="700" height="80" rx="40" fill="url(#titleGrad2)" filter="url(#shadow1)"/>
+  <text x="400" y="82" text-anchor="middle" font-size="34" font-weight="900" fill="white">🌍 vs 💻 物理世界 vs 计算机世界</text>
+
+  <!-- Card number -->
+  <circle cx="730" cy="140" r="25" fill="#6366F1" opacity="0.9"/>
+  <text x="730" y="148" text-anchor="middle" font-size="18" font-weight="700" fill="white">2/4</text>
+
+  <!-- Intro -->
+  <rect x="40" y="130" width="720" height="60" rx="12" fill="white" stroke="#C7D2FE" stroke-width="2" filter="url(#shadow1)"/>
+  <text x="65" y="155" font-size="14" fill="#555">🤔 为什么计算机世界这么难理解？因为它和我们熟悉的物理世界有</text>
+  <text x="65" y="177" font-size="14" fill="#555"><tspan font-weight="900" fill="#6366F1">6大本质区别</tspan>！来看看对比 👇</text>
+
+  <!-- Comparison 1: Real vs Virtual -->
+  <g transform="translate(40,205)">
+    <rect width="350" height="110" rx="12" fill="#D1FAE5" stroke="#34D399" stroke-width="2"/>
+    <text x="15" y="30" font-size="16" font-weight="900" fill="#059669">🌳 物理世界：真实</text>
+    <text x="15" y="55" font-size="13" fill="#555">开灯、倒水、吃饭、开门…</text>
+    <text x="15" y="75" font-size="13" fill="#555">五官直接感知，天生就会理解</text>
+    <text x="15" y="95" font-size="12" fill="#10B981">看得见 👀 摸得着 ✋ 听得见 👂</text>
+  </g>
+  <g transform="translate(410,205)">
+    <rect width="350" height="110" rx="12" fill="#EDE9FE" stroke="#8B5CF6" stroke-width="2"/>
+    <text x="15" y="30" font-size="16" font-weight="900" fill="#6D28D9">💻 计算机世界：虚拟</text>
+    <text x="15" y="55" font-size="13" fill="#555">文件、代码、数据…</text>
+    <text x="15" y="75" font-size="13" fill="#555">需要后天学习，无法直接感知</text>
+    <text x="15" y="95" font-size="12" fill="#7C3AED">全是抽象概念 🧠</text>
+  </g>
+
+  <!-- VS icon between pairs -->
+  <circle cx="400" cy="258" r="18" fill="#F59E0B"/>
+  <text x="400" y="264" text-anchor="middle" font-size="14" font-weight="900" fill="white">VS</text>
+
+  <!-- Comparison 2: Continuous vs Discrete -->
+  <g transform="translate(40,330)">
+    <rect width="350" height="110" rx="12" fill="#D1FAE5" stroke="#34D399" stroke-width="2"/>
+    <text x="15" y="30" font-size="16" font-weight="900" fill="#059669">🚰 物理世界：连续</text>
+    <text x="15" y="55" font-size="13" fill="#555">水龙头开大一点→水流大一点</text>
+    <text x="15" y="75" font-size="13" fill="#555">变化是渐进的、平滑的</text>
+    <!-- Smooth wave -->
+    <path d="M15,100 Q60,85 105,100 Q150,115 195,100 Q240,85 285,100" fill="none" stroke="#10B981" stroke-width="3"/>
+  </g>
+  <g transform="translate(410,330)">
+    <rect width="350" height="110" rx="12" fill="#EDE9FE" stroke="#8B5CF6" stroke-width="2"/>
+    <text x="15" y="30" font-size="16" font-weight="900" fill="#6D28D9">🔢 计算机世界：离散</text>
+    <text x="15" y="55" font-size="13" fill="#555">要么是0，要么是1</text>
+    <text x="15" y="75" font-size="13" fill="#555">没有中间值，跳跃式变化</text>
+    <!-- Step function -->
+    <path d="M15,100 L60,100 L60,88 L120,88 L120,100 L180,100 L180,88 L240,88 L240,100 L300,100" fill="none" stroke="#7C3AED" stroke-width="3"/>
+  </g>
+
+  <circle cx="400" cy="383" r="18" fill="#F59E0B"/>
+  <text x="400" y="389" text-anchor="middle" font-size="14" font-weight="900" fill="white">VS</text>
+
+  <!-- Comparison 3: Visible cause-effect vs Hidden -->
+  <g transform="translate(40,455)">
+    <rect width="350" height="110" rx="12" fill="#D1FAE5" stroke="#34D399" stroke-width="2"/>
+    <text x="15" y="30" font-size="16" font-weight="900" fill="#059669">👁️ 物理世界：因果可见</text>
+    <text x="15" y="55" font-size="13" fill="#555">推桌子→桌子动了</text>
+    <text x="15" y="75" font-size="13" fill="#555">按按钮→灯亮了</text>
+    <text x="15" y="95" font-size="13" fill="#10B981" font-weight="700">反馈即时、清晰、直觉 ✅</text>
+  </g>
+  <g transform="translate(410,455)">
+    <rect width="350" height="110" rx="12" fill="#EDE9FE" stroke="#8B5CF6" stroke-width="2"/>
+    <text x="15" y="30" font-size="16" font-weight="900" fill="#6D28D9">🫣 计算机世界：因果隐藏</text>
+    <text x="15" y="55" font-size="13" fill="#555">按一个按钮→背后执行</text>
+    <text x="15" y="75" font-size="13" fill="#555">成千上万条指令</text>
+    <text x="15" y="95" font-size="13" fill="#7C3AED" font-weight="700">看不见也摸不到 🔮</text>
+  </g>
+
+  <circle cx="400" cy="508" r="18" fill="#F59E0B"/>
+  <text x="400" y="514" text-anchor="middle" font-size="14" font-weight="900" fill="white">VS</text>
+
+  <!-- Comparison 4: No abstraction vs All abstraction -->
+  <g transform="translate(40,580)">
+    <rect width="350" height="110" rx="12" fill="#D1FAE5" stroke="#34D399" stroke-width="2"/>
+    <text x="15" y="30" font-size="16" font-weight="900" fill="#059669">☕ 物理世界：没有抽象层</text>
+    <text x="15" y="55" font-size="13" fill="#555">杯子就是杯子，车就是车</text>
+    <text x="15" y="75" font-size="13" fill="#555">你看到什么就是什么</text>
+    <text x="15" y="95" font-size="12" fill="#10B981">所见即所得 👀 = 🎯</text>
+  </g>
+  <g transform="translate(410,580)">
+    <rect width="350" height="110" rx="12" fill="#EDE9FE" stroke="#8B5CF6" stroke-width="2"/>
+    <text x="15" y="30" font-size="16" font-weight="900" fill="#6D28D9">🪄 计算机世界：全是抽象层</text>
+    <text x="15" y="55" font-size="13" fill="#555">"文件"不是纸，"桌面"不是桌子</text>
+    <text x="15" y="75" font-size="13" fill="#555">鼠标点的是图标不是实物</text>
+    <text x="15" y="95" font-size="12" fill="#7C3AED">全靠比喻和抽象理解 🧠💭</text>
+  </g>
+
+  <circle cx="400" cy="633" r="18" fill="#F59E0B"/>
+  <text x="400" y="639" text-anchor="middle" font-size="14" font-weight="900" fill="white">VS</text>
+
+  <!-- Comparison 5: Tolerant vs Strict -->
+  <g transform="translate(40,705)">
+    <rect width="350" height="110" rx="12" fill="#D1FAE5" stroke="#34D399" stroke-width="2"/>
+    <text x="15" y="30" font-size="16" font-weight="900" fill="#059669">😊 物理世界：包容错误</text>
+    <text x="15" y="55" font-size="13" fill="#555">说话语序错了→别人还能听懂</text>
+    <text x="15" y="75" font-size="13" fill="#555">饭做咸了→加水稀释</text>
+    <text x="15" y="95" font-size="12" fill="#10B981">模糊容错性 ≈ 差不多就行 🤷</text>
+  </g>
+  <g transform="translate(410,705)">
+    <rect width="350" height="110" rx="12" fill="#EDE9FE" stroke="#8B5CF6" stroke-width="2"/>
+    <text x="15" y="30" font-size="16" font-weight="900" fill="#6D28D9">😤 计算机世界：死板严谨</text>
+    <text x="15" y="55" font-size="13" fill="#555">标点错→代码不运行</text>
+    <text x="15" y="75" font-size="13" fill="#555">路径写错一个字母→文件找不到</text>
+    <text x="15" y="95" font-size="12" fill="#E74C3C" font-weight="700">零容忍！必须100%精确 ⚠️</text>
+  </g>
+
+  <circle cx="400" cy="758" r="18" fill="#F59E0B"/>
+  <text x="400" y="764" text-anchor="middle" font-size="14" font-weight="900" fill="white">VS</text>
+
+  <!-- Comparison 6: Decimal vs Binary -->
+  <g transform="translate(40,830)">
+    <rect width="350" height="120" rx="12" fill="#D1FAE5" stroke="#34D399" stroke-width="2"/>
+    <text x="15" y="30" font-size="16" font-weight="900" fill="#059669">🖐️ 物理世界：十进制</text>
+    <text x="15" y="55" font-size="13" fill="#555">因为我们有十根手指头！</text>
+    <text x="15" y="75" font-size="13" fill="#555">逢10进1</text>
+    <!-- Fingers -->
+    <text x="15" y="105" font-size="24">👆👆👆👆👆 👆👆👆👆👆</text>
+  </g>
+  <g transform="translate(410,830)">
+    <rect width="350" height="120" rx="12" fill="#EDE9FE" stroke="#8B5CF6" stroke-width="2"/>
+    <text x="15" y="30" font-size="16" font-weight="900" fill="#6D28D9">⚡ 计算机世界：二进制</text>
+    <text x="15" y="55" font-size="13" fill="#555">因为电路只有 开/关 两个状态</text>
+    <text x="15" y="75" font-size="13" fill="#555">逢2进1，只用 0 和 1</text>
+    <!-- Binary -->
+    <text x="15" y="108" font-size="20" font-weight="900" fill="#6366F1">0 1 0 1 1 0 1 0 0 1</text>
+  </g>
+
+  <circle cx="400" cy="888" r="18" fill="#F59E0B"/>
+  <text x="400" y="894" text-anchor="middle" font-size="14" font-weight="900" fill="white">VS</text>
+
+  <!-- Encouragement box -->
+  <rect x="40" y="970" width="720" height="80" rx="16" fill="white" stroke="#C7D2FE" stroke-width="2" filter="url(#shadow1)"/>
+  <text x="65" y="998" font-size="15" fill="#555">💪 别担心！计算机世界虽然一开始难懂，但它有规则、可预测、逻辑严密。</text>
+  <text x="65" y="1022" font-size="15" fill="#555">一旦抓住 <tspan font-weight="900" fill="#6366F1">比特(bit)</tspan> 等基本原理，反而比物理世界更容易掌控！</text>
+
+  <!-- Footer -->
+  <text x="400" y="1080" text-anchor="middle" font-size="12" fill="#AAA">📚 计算机基本组成 · 漫画知识笔记</text>
+</svg>
